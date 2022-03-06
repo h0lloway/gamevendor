@@ -7,16 +7,11 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
-
-    color: #101828;
+    color: var(--main-black);
   }
 
   &__descr {
     margin-bottom: 20px;
-
-    font-size: 16px;
-    line-height: 24px;
-
     color: #667085;
   }
 
@@ -41,15 +36,12 @@
       position: relative;
       padding: 24px 68px 24px 0px;
       cursor: pointer;
-
       margin: 0;
       max-width: 100%;
-
       font-weight: 600;
       font-size: 18px;
       line-height: 24px;
-      color: #101828;
-
+      color: var(--main-black);
       transition: color 0.4s ease;
     }
 
@@ -82,32 +74,31 @@
       right: 2px;
     }
 
-    &__span::before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 16%;
-      right: 0;
-      width: 64%;
-      height: 2px;
-      bottom: 0;
-      border-radius: 10px;
-      background-color: #7f56d9;
-    }
-
+    &__span::before,
     &__span::after {
       content: "";
       position: absolute;
-      top: 16%;
-      left: 5px;
       right: 0;
-      width: 2px;
-      height: 67%;
       bottom: 0;
       border-radius: 10px;
       background-color: #7f56d9;
       transition: all .3s ease;
     }
+
+    &__span::before {
+      top: 5px;
+      left: 16%;
+      width: 64%;
+      height: 2px;
+    }
+
+    &__span::after {
+      top: 16%;
+      left: 5px;
+      width: 2px;
+      height: 67%;
+    }
+    
 
     &__wrap.active .accordion__span::after {
       transform: rotateX(90deg);
@@ -131,9 +122,6 @@
 
     &__descr {
       margin-bottom: 16px;
-
-      font-size: 16px;
-      line-height: 24px;
     }
 
     &__sublist {
@@ -146,17 +134,8 @@
     &__subtitle {
       margin-bottom: 16px;
 
-      font-size: 16px;
-      line-height: 24px;
-
-      color: #101828;
+      color: var(--main-black);
     }
-
-    &__empty {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
   }
 
   .sublist__item {
@@ -234,6 +213,7 @@
 
   .faq {
     padding-top: 82px;
+    padding-bottom: 79px;
 
 
   }

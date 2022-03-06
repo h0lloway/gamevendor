@@ -80,6 +80,13 @@ textarea {
   border: none;
 }
 
+input[type=text]::-ms-clear { display: none; width: 0; height: 0; }
+input[type=text]::-ms-reveal { display: none; width: 0; height: 0; }
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration { display: none; }
+
 h1,
 h2,
 h3,
@@ -193,6 +200,32 @@ body {
 .link-active::before {
   content: '';
   display: none;
+}
+
+
+// common-fonts 
+
+.hero__descr,
+.hero__btn,
+.form__input,
+.form__btn,
+.footer__descr,
+.footer__input,
+.footer__btn,
+.list-item-link,
+.copy,
+.faq__descr,
+.accordion__descr,
+.accordion__subtitle,
+.accordion__empty {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__subtitle,
+.filters-list__item {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 

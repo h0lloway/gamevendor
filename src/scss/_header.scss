@@ -83,7 +83,6 @@
       top: 94%;
     }
 
-
     .swiper-slide {
 
       &__text {
@@ -94,10 +93,6 @@
     .for-large {
       display: none;
     }
-
-
-
-
   }
   
 }
@@ -196,7 +191,7 @@
     .for-large {
 
       display: block; 
-      filter: drop-shadow(9px 9px 9px rgba(16, 24, 40, 0.02)); 
+      box-shadow: 0px 12px 12px -4px rgb(16 24 40 / 2%);
 
       &__container {
         border-top: 1px solid #EAECF0;
@@ -243,7 +238,6 @@
   }
   
 }
-
 
 @media (min-width: 1200px) {
   .header {
