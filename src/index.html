@@ -11,9 +11,9 @@
   <!-- fonts -->
   <!-- fonts -->
 
-  <link rel="prefetch" href="fonts/Inter-Medium.woff2" as="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="fonts/Inter-Regular.woff2" as="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="fonts/Inter-SemiBold.woff2" as="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- styles -->
   <!-- styles -->
@@ -27,7 +27,7 @@
   <!-- JavaScript -->
   <!-- JavaScript -->
 
-  <!-- tabs/accordion -->
+  <!-- accordion -->
   <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -112,34 +112,34 @@
       <div class="container for-large__container">
         <ul class="for-large__list list-reset">
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Discover</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Discover">Discover</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Browse</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Browse">Browse</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Store</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Store">Store</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Platforms</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Platforms">Platforms</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Releases</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Releases">Releases</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Mobile</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Mobile">Mobile</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Articles</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Articles">Articles</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Blog</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Blog">Blog</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">News</a>
+            <a class="for-large__item-link" href="#" aria-label="link to News">News</a>
           </li>
           <li class="for-large__list-item">
-            <a class="for-large__item-link" href="#">Contacts</a>
+            <a class="for-large__item-link" href="#" aria-label="link to Contacts">Contacts</a>
           </li>
         </ul>
       </div>
@@ -153,17 +153,17 @@
 
         <ul class="hero__breadcrumbs list-reset">
           <li class="list-item">
-            <a class="item-link grey-link" href="#" aria-label="Home">
+            <a class="item-link grey-link" href="#" aria-label="link to Home">
               Home
             </a>
           </li>
           <li class="list-item">
-            <a class="item-link grey-link" href="#" aria-label="Discover">
+            <a class="item-link grey-link" href="#" aria-label="link to Discover">
               Discover
             </a>
           </li>
           <li class="list-item">
-            <a class="item-link grey-link link-active" href="#" aria-label="Games">
+            <a class="item-link grey-link link-active" href="#" aria-label="link to Games">
               Games
             </a>
           </li>
@@ -315,16 +315,125 @@
                 </button>
               </li>
 
-              <!-- <li class="filters-list__item">Clear all
+              <li class="filters-list__item">Clear all
                 <button class="filters-list__btn my-btn" type="button">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
                 </button>
-              </li> -->
+              </li>
 
             </ul>
 
+
+            <!-- <div class="filters__list filters__list-swiper swiper list-reset"
+              style="margin-bottom: 25px;max-width: 280px;">
+              <ul class="filters__swiper-wrapper filters-list swiper-wrapper">
+                <li class="filters-list__item swiper-slide">Strategy
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class=" filters-list__item swiper-slide">RPG
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Action
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Shooter
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Clear all
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="filters__list filters__list-swiper swiper list-reset filters-list"
+              style="margin-bottom: 36px;max-width: 290px;">
+              <ul class="filters-list__swiper-wrapper swiper-wrapper">
+                <li class="filters-list__item swiper-slide">Strategy
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class=" filters-list__item swiper-slide">RPG
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Action
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Shooter
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Clear all
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+
+            </div>
           </form>
 
         </div>
@@ -362,7 +471,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action-rpg">Action RPG</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Saints Row</a>
+                    <a class="product__link" href="#" aria-label="Saints Row game">Saints Row</a>
                   </h2>
                   <div class="product__star">
                     <svg class="transp-star">
@@ -411,7 +520,7 @@
                 <div class="product__info-top">
                   <span class="product__genre multi-rpg">Multiplayer RPG</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Paladins</a>
+                    <a class="product__link" href="#" aria-label="Paladins game">Paladins</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -459,7 +568,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action">Action</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Far Cry&nbsp;6</a>
+                    <a class="product__link" href="#" aria-label="Far Cry 6 game">Far Cry&nbsp;6</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -508,7 +617,7 @@
                 <div class="product__info-top">
                   <span class="product__genre shooter">Shooter</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Call of&nbsp;Duty: Warzone</a>
+                    <a class="product__link" href="#" aria-label="Call of Duty game">Call of&nbsp;Duty: Warzone</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -557,7 +666,8 @@
                 <div class="product__info-top">
                   <span class="product__genre action">Action</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">World of&nbsp;Warcraft: Shadowlands</a>
+                    <a class="product__link" href="#" aria-label="World of Warcraft game">World of&nbsp;Warcraft:
+                      Shadowlands</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -606,7 +716,7 @@
                 <div class="product__info-top">
                   <span class="product__genre shooter">Shooter</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Fortnite</a>
+                    <a class="product__link" href="#" aria-label="Fortite game">Fortnite</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -655,7 +765,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action-rpg">Action RPG</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Horizon: Forbidden West</a>
+                    <a class="product__link" href="#" aria-label="Horizon game">Horizon: Forbidden West</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -704,7 +814,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action">Action</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Need for Speed: Heat</a>
+                    <a class="product__link" href="#" aria-label="Need for Speed game">Need for Speed: Heat</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -753,7 +863,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action">Action</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Spider-Man: Miles Morales</a>
+                    <a class="product__link" href="#" aria-label="Spider-Man game">Spider-Man: Miles Morales</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -802,7 +912,7 @@
                 <div class="product__info-top">
                   <span class="product__genre card-game">Card Game</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Witcher&nbsp;3: Wild Hunt</a>
+                    <a class="product__link" href="#" aria-label="Witcher 3 game">Witcher&nbsp;3: Wild Hunt</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -851,7 +961,8 @@
                 <div class="product__info-top">
                   <span class="product__genre shooter">Shooter</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Guardians of&nbsp;the Galaxy</a>
+                    <a class="product__link" href="#" aria-label="Guardians of the Galaxy game">Guardians of&nbsp;the
+                      Galaxy</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -900,7 +1011,7 @@
                 <div class="product__info-top">
                   <span class="product__genre shooter">Shooter</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Crash Team Racing</a>
+                    <a class="product__link" href="#" aria-label="Crash Team Racing game">Crash Team Racing</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -949,7 +1060,7 @@
                 <div class="product__info-top">
                   <span class="product__genre multi-rpg">Multiplayer RPG</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Spider-Man</a>
+                    <a class="product__link" href="#" aria-label="Spider-Man game">Spider-Man</a>
                   </h2>
                   <div class="product__star">
                     <svg class="star">
@@ -998,7 +1109,7 @@
                 <div class="product__info-top">
                   <span class="product__genre action-rpg">Action RPG</span>
                   <h2 class="product__title">
-                    <a class="product__link" href="#">Dragon Age&nbsp;5</a>
+                    <a class="product__link" href="#" aria-label="Dragon Age 5 game">Dragon Age&nbsp;5</a>
                   </h2>
                   <div class="product__star">
                     <svg class="transp-star">
@@ -1078,11 +1189,7 @@
           </li>
 
         </ul>
-
-
-
       </div>
-
     </section>
 
     <section class=" faq">
@@ -1204,13 +1311,9 @@
               </div>
               <div class="accordion__text">
                 <div class="accordion__content">
-
-
                   <span class="accordion__empty">
                     It&nbsp;s&nbsp;still empty here
                   </span>
-
-
                 </div>
               </div>
             </li>
@@ -1250,45 +1353,47 @@
             <li class="footer__list-item">
               <h3 class="footer__category-name">Categories</h3>
             </li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Strategy</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Action</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Shooter</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Card Game</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Simulator</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">RPG</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Multiplayer</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Strategy">Strategy</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Action">Action</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Shooter">Shooter</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Card Game">Card Game</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Simulator">Simulator</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="RPG">RPG</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Multiplayer">Multiplayer</a>
+            </li>
           </ul>
 
           <ul class="footer__list list-two list-reset">
             <li class="footer__list-item">
               <h3 class="footer__category-name">Company</h3>
             </li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">About&nbsp;us</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Careers</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Press</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">News</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Contact</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="About us">About&nbsp;us</a>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Careers">Careers</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Press">Press</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="News">News</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Contact">Contact</a></li>
           </ul>
 
           <ul class="footer__list list-three list-reset">
             <li class="footer__list-item">
               <h3 class="footer__category-name">Legal</h3>
             </li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Terms</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Privacy</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Cookies</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Licenses</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Settings</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Terms">Terms</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Privacy">Privacy</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Cookies">Cookies</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Licenses">Licenses</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Settings">Settings</a></li>
           </ul>
 
           <ul class="footer__list list-four list-reset">
             <li class="footer__list-item">
               <h3 class="footer__category-name">Social</h3>
             </li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Twitter</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Facebook</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">Dribbble</a></li>
-            <li class="footer__list-item"><a class="list-item-link" href="#">GitHub</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Twitter">Twitter</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Facebook">Facebook</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Dribbble">Dribbble</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="GitHub">GitHub</a></li>
           </ul>
         </div>
 

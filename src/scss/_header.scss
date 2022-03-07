@@ -111,6 +111,14 @@
       top: 93%;
     }
 
+    &__swiper-button-next {
+      right: 2.8%;
+    }
+
+    &__swiper-button-prev {
+      left: 2.8%;
+    }
+
     .swiper-slide {
 
       &__text {
@@ -242,6 +250,13 @@
 @media (min-width: 1200px) {
   .header {
 
+    &__swiper-button-next {
+      right: 2%;
+    }
+
+    &__swiper-button-prev {
+      left: 2%;
+    }
 
     &__bottom {
       padding-left: 104px;

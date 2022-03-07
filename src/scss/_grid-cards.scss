@@ -98,7 +98,7 @@
   .product {
     display: flex;
     flex-direction: column;
-    padding: 12.5px 12px 15.5px;
+    padding: 10.9px 12px 15.5px;
     background-color: var(--white-color);
     border-radius: 12px;
     height: 100%;
@@ -108,6 +108,7 @@
 
       img {
         width: 100%;
+        transform: translateY(6px);
       }
     }
 
@@ -208,7 +209,7 @@
     }
 
     &__title {
-      margin-top: 13px;
+      margin-top: 12.7px;
       margin-bottom: 10px;
     }
 
@@ -323,7 +324,7 @@
 
   &__btn {
     width: 100%;
-    margin-top: 38px;
+    margin-top: 40px;
     padding: 10px 95px;
 
 
@@ -375,9 +376,17 @@
 
       padding: 11.5px 12px 15.5px;
 
+      &__image {  
+        img {
+          transform: translateY(2px);
+        }
+      }
+
       &__title {
         margin-top: 12px;
       }
+
+
     }
 
 
