@@ -412,6 +412,7 @@
 
       &__navigation.disable {
         fill: #a0a0a0;
+        cursor:no-drop;
       }
 
       .prev {
@@ -473,7 +474,7 @@
       }
 
       &__btn-span {
-        left: 21%;
+        left: 16%;
       }
     }
   }
@@ -518,6 +519,24 @@
     }
   }
 
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+
+  .grid-cards {
+
+    .new-product {
+      
+      &__btn {
+        padding: 10px 31px 10px 31px;
+      }
+
+      &__btn-span {
+        top: 14px;
+        left: 11%;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {

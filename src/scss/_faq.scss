@@ -45,6 +45,10 @@
       transition: color 0.4s ease;
     }
 
+    &__wrap:focus-visible .accordion__title {
+      color: var(--dark-purple);
+    }
+
     &__title:hover {
       color: var(--purple-color);
     }
@@ -135,6 +139,10 @@
       margin-bottom: 16px;
 
       color: var(--main-black);
+    }
+
+    &__empty {
+      margin-bottom: 24px;
     }
   }
 

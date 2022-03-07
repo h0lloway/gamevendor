@@ -39,7 +39,7 @@
     border-radius: 8px;
 
     font-family: "Inter", "sans-serif";
-    color: #98a2b3;
+    color: var(--main-black);
     transition: all .3s ease;
   }
 
@@ -54,9 +54,7 @@
     padding: 10px 95px 10px 92px;
     background-color: #7F56D9;
     border-radius: 8px;
-
     font-family: "Inter", "sans-serif";
-
     color: var(--white-color);
     transition: all .3s ease;
   }

@@ -38,7 +38,7 @@
       font-family: "Inter", "sans-serif";
       font-weight: 500;
 
-      color: #98A2B3;
+      color: var(--main-black);
       transition: border .3s ease;
     }
 
@@ -48,6 +48,10 @@
 
     &__input:hover {
       border-color: #98A2B3;
+    }
+
+    &__input:focus-visible {
+      border-color: var(--purple-color);
     }
 
     .search {
