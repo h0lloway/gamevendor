@@ -62,12 +62,13 @@
             </div>
           </div>
 
-          <button class="header__swiper-button-prev swiper-button-prev my-btn">
+          <button class="header__swiper-button-prev swiper-button-prev my-btn" type="button"
+            aria-label="Previously page">
             <svg class="navigation">
               <use xlink:href="img/sprite.svg#navigation-prev"></use>
             </svg>
           </button>
-          <button class="header__swiper-button-next swiper-button-next my-btn">
+          <button class="header__swiper-button-next swiper-button-next my-btn" type="button" aria-label="Next page">
             <svg class="navigation">
               <use xlink:href="img/sprite.svg#navigation-next"></use>
             </svg>
@@ -85,21 +86,21 @@
         <img class="header__logo" src="img/logo-gamevendor.png" alt="Логотип компании gamevendor">
         <ul class="header__tools list-reset tools">
           <li class="tools__item">
-            <button class="tools__btn my-btn" type="button">
+            <button class="tools__btn my-btn" type="button" aria-label="search">
               <svg class="header-search">
                 <use xlink:href="img/sprite.svg#header-search"></use>
               </svg>
             </button>
           </li>
           <li class="tools__item">
-            <button class="tools__btn my-btn" type="button">
+            <button class="tools__btn my-btn" type="button" aria-label="account">
               <svg class="header-account">
                 <use xlink:href="img/sprite.svg#header-account"></use>
               </svg>
             </button>
           </li>
           <li class="tools__item">
-            <button class="tools__btn my-btn" type="button">
+            <button class="tools__btn my-btn" type="button" aria-label="shopping-cart">
               <svg class="header-cart">
                 <use xlink:href="img/sprite.svg#header-cart"></use>
               </svg>
@@ -181,7 +182,7 @@
               Connect with friends. Refer a&nbsp;friend and unlock your&nbsp;$10 coupon! Offer ends February&nbsp;27.
             </p>
           </div>
-          <button class="hero__btn my-btn" type="button">Invite a&nbsp;friend</button>
+          <button class="hero__btn my-btn" type="button" aria-label="Invite a friend">Invite a&nbsp;friend</button>
           <img class="hero__img-bg" src="img/hero-bg-1440-2.webp" alt="">
         </div>
       </div>
@@ -200,7 +201,8 @@
                   <svg class="search">
                     <use xlink:href="img/sprite.svg#search"></use>
                   </svg>
-                  <input class="form__input" type="search" id="search" name="search-game" placeholder="Search...">
+                  <input class="form__input" type="search" id="search" name="search-game" placeholder="Search..."
+                    aria-label="Enter to find">
                 </label>
               </div>
 
@@ -208,7 +210,7 @@
                 <h2 class="form__subtitle">Category</h2>
 
                 <div class="form__choices-1 choices-1">
-                  <select class="multi-default" name="category" id="first-select">
+                  <select class="multi-default" name="category" id="first-select" aria-label="Choice of options">
                     <option value="" disabled selected hidden>1</option>
                   </select>
 
@@ -263,7 +265,7 @@
                 <h2 class="form__subtitle">Sort by</h2>
 
                 <div class="form__choices-2 choices-2">
-                  <select class="multi-default" name="sort-by" id="second-select">
+                  <select class="multi-default" name="sort-by" id="second-select" aria-label="Choice of options">
                     <option value="">Popular</option>
                     <option>Popular</option>
                     <option>Popular</option>
@@ -278,13 +280,13 @@
               <svg class="filter">
                 <use xlink:href="img/sprite.svg#filter"></use>
               </svg>
-              <button class="form__btn my-btn" type="button">Filters</button>
+              <button class="form__btn my-btn" type="button" aria-label="Filters">Filters</button>
             </div>
 
             <ul class="filters__list filters-list list-reset">
 
               <li class="filters-list__item">Strategy
-                <button class="filters-list__btn my-btn" type="button">
+                <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
@@ -292,7 +294,7 @@
               </li>
 
               <li class=" filters-list__item">RPG
-                <button class="filters-list__btn my-btn" type="button">
+                <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
@@ -300,7 +302,7 @@
               </li>
 
               <li class="filters-list__item">Action
-                <button class="filters-list__btn my-btn" type="button">
+                <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
@@ -308,7 +310,7 @@
               </li>
 
               <li class="filters-list__item">Shooter
-                <button class="filters-list__btn my-btn" type="button">
+                <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
@@ -316,7 +318,7 @@
               </li>
 
               <li class="filters-list__item">Clear all
-                <button class="filters-list__btn my-btn" type="button">
+                <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                   <svg class="x">
                     <use xlink:href="img/sprite.svg#x"></use>
                   </svg>
@@ -325,97 +327,35 @@
 
             </ul>
 
-
-            <!-- <div class="filters__list filters__list-swiper swiper list-reset"
-              style="margin-bottom: 25px;max-width: 280px;">
-              <ul class="filters__swiper-wrapper filters-list swiper-wrapper">
-                <li class="filters-list__item swiper-slide">Strategy
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
-                    </svg>
-                  </button>
-                </li>
-
-                <li class=" filters-list__item swiper-slide">RPG
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="filters-list__item swiper-slide">Action
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="filters-list__item swiper-slide">Shooter
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="filters-list__item swiper-slide">Clear all
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div> -->
-
             <div class="filters__list filters__list-swiper swiper list-reset filters-list"
               style="margin-bottom: 36px;max-width: 290px;">
               <ul class="filters-list__swiper-wrapper swiper-wrapper">
                 <li class="filters-list__item swiper-slide">Strategy
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
+                  <button class="filters-list__btn my-btn" type="button" aria-label="delete">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
                     </svg>
                   </button>
                 </li>
 
                 <li class=" filters-list__item swiper-slide">RPG
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
+                  <button class="filters-list__btn my-btn" type="button" aria-label="delete">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
                     </svg>
                   </button>
                 </li>
 
                 <li class="filters-list__item swiper-slide">Action
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
+                  <button class="filters-list__btn my-btn" type="button" aria-label="delete">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
                     </svg>
                   </button>
                 </li>
 
                 <li class="filters-list__item swiper-slide">Shooter
-                  <button class="filters-list__btn my-btn" type="button">
+                  <button class="filters-list__btn my-btn" type="button" aria-label="delete">
                     <svg class="x">
                       <use xlink:href="img/sprite.svg#x"></use>
                     </svg>
@@ -423,11 +363,9 @@
                 </li>
 
                 <li class="filters-list__item swiper-slide">Clear all
-                  <button class="filters-list__btn my-btn" type="button">
-                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
-                        fill="#7F56D9" />
+                  <button class="filters-list__btn my-btn" type="button" aria-label="delete">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
                     </svg>
                   </button>
                 </li>
@@ -451,7 +389,7 @@
             <span class="new-product__span">
               You can add a&nbsp;product card by&nbsp;clicking on&nbsp;the button
             </span>
-            <button class="new-product__btn my-btn" type="button">
+            <button class="new-product__btn my-btn" type="button" aria-label="add card">
               <span class="new-product__btn-span"></span>
               Add card
             </button>
@@ -1146,12 +1084,12 @@
 
         </ul>
 
-        <button class="grid-cards__btn my-btn" type="button">Show more</button>
+        <button class="grid-cards__btn my-btn" type="button" aria-label="Show more">Show more</button>
 
         <ul class="pagination list-reset">
 
           <li class="pagination__item prev">
-            <button class="pagination__navigation my-btn disable">
+            <button class="pagination__navigation my-btn disable" aria-label="Previously page">
               <svg class="navigation">
                 <use xlink:href="img/sprite.svg#navigation-prev"></use>
               </svg>
@@ -1159,29 +1097,30 @@
           </li>
 
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn pag-active-btn" type="button">1</button>
+            <button class="pagination__btn my-btn pag-active-btn" type="button" aria-label="First page">1</button>
           </li>
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn" type="button">2</button>
+            <button class="pagination__btn my-btn" type="button" aria-label="Second page">2</button>
           </li>
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn" type="button">3</button>
+            <button class="pagination__btn my-btn" type="button" aria-label="Third page">3</button>
           </li>
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn" type="button">4</button>
+            <button class="pagination__btn my-btn" type="button" aria-label="Fourth page">4</button>
           </li>
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn" type="button">5</button>
+            <button class="pagination__btn my-btn" type="button" aria-label="Fifth page">5</button>
           </li>
           <li class="pagination__item pagination__digit" style="color: #98A2B3;">
             ...
           </li>
           <li class="pagination__item pagination__digit">
-            <button class="pagination__btn my-btn" type="button">99</button>
+            <button class="pagination__btn my-btn" type="button" aria-label="
+            Ninety-ninth page">99</button>
           </li>
 
           <li class="pagination__item">
-            <button class="pagination__navigation my-btn">
+            <button class="pagination__navigation my-btn" aria-label="Next page">
               <svg class="navigation">
                 <use xlink:href="img/sprite.svg#navigation-next"></use>
               </svg>
@@ -1342,9 +1281,10 @@
 
           <form class="footer__form" action="#">
             <label class="footer__label" for="footer-search">
-              <input class="footer__input" type="search" placeholder="Enter email" id="footer-search">
+              <input class="footer__input" type="search" placeholder="Enter email" id="footer-search"
+                aria-label="Enter to find">
             </label>
-            <button class="footer__btn my-btn" type="button">Subscribe</button>
+            <button class="footer__btn my-btn" type="button" aria-label="Subscribe">Subscribe</button>
           </form>
         </div>
 
@@ -1409,7 +1349,7 @@
     <div class="container fix__container">
       <ul class="fix__nav-bar nav-bar list-reset">
         <li class="nav-bar__item">
-          <button class="nav-bar__btn my-btn active-btn" type="button">
+          <button class="nav-bar__btn my-btn active-btn" type="button" aria-label="Home">
             <svg class="home">
               <use xlink:href="img/sprite.svg#home"></use>
             </svg>
@@ -1417,7 +1357,7 @@
           </button>
         </li>
         <li class="nav-bar__item">
-          <button class="nav-bar__btn my-btn" type="button">
+          <button class="nav-bar__btn my-btn" type="button" aria-label="Browse">
             <svg class="browse">
               <use xlink:href="img/sprite.svg#browse"></use>
             </svg>
@@ -1425,7 +1365,7 @@
           </button>
         </li>
         <li class="nav-bar__item">
-          <button class="nav-bar__btn my-btn" type="button">
+          <button class="nav-bar__btn my-btn" type="button" aria-label="Search">
             <svg class="search-bot">
               <use xlink:href="img/sprite.svg#search-bot"></use>
             </svg>
@@ -1433,7 +1373,7 @@
           </button>
         </li>
         <li class="nav-bar__item">
-          <button class="nav-bar__btn my-btn" type="button">
+          <button class="nav-bar__btn my-btn" type="button" aria-label="Account">
             <svg class="account">
               <use xlink:href="img/sprite.svg#account"></use>
             </svg>
@@ -1441,7 +1381,7 @@
           </button>
         </li>
         <li class="nav-bar__item">
-          <button class="nav-bar__btn my-btn" type="button">
+          <button class="nav-bar__btn my-btn" type="button" aria-label="Cart">
             <svg class="cart">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
