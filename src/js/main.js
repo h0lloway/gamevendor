@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload // lazyload 
+
+  lazyload();
+
   // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper 
 
   const headerSwiper = new Swiper('.header__swiper', {
@@ -41,11 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // if ($(window).width() < 550) {
-  //   console.log()
-  // }
-
-  // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON // NEW CARD BUTTON 
+  // new card button // new card button // new card button // new card button // new card button // new card button // new card button // new card button // new card button 
 
   $(".new-product__btn").click(function () {
     let title = 0;
@@ -128,8 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $(".new-product").after(newItem);
   });
 
-
-  // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS // SWIPER ON LOW RESOLUTIONS 
+  // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res // swiper on low res 
 
   $(window).on('load resize', (function () {
     var windowsize = $(window).width();
