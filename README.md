@@ -1,7 +1,7 @@
 Ссылка на сайт
 https://h0lloway.github.io/
 
-Light House
+<!-- Light House
 
 Desktop
 
@@ -9,7 +9,7 @@ Desktop
 
 Mobile
 
-![image](https://user-images.githubusercontent.com/65232972/157211200-1eb05008-35c8-4b2e-a7f7-e732b14d95b0.png)
+![image](https://user-images.githubusercontent.com/65232972/157211200-1eb05008-35c8-4b2e-a7f7-e732b14d95b0.png) -->
 
 Команды в консоли:
 
