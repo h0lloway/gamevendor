@@ -3,7 +3,7 @@ https://h0lloway.github.io/
 
 Light House
 
-![image](https://user-images.githubusercontent.com/65232972/157125949-a496456b-5e2c-4e65-82f6-2d9ff62040ab.png)
+![image](https://user-images.githubusercontent.com/65232972/157195234-fed66e78-68fe-408c-96b6-c5f7648d02d8.png)
 
 Команды в консоли:
 
